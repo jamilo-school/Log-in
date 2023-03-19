@@ -77,9 +77,15 @@ form h3{
     font-weight: 500;
     line-height: 42px;
     text-align: center;
+    line-height: 1.5em;
 
-    
+
 }
+form h4{
+      float: right ;
+      line-height: 2.5em;
+    }
+
 
 label{
     display: block;
@@ -111,7 +117,7 @@ button{
     width: 100%;
     background-color: #ffffff;
     color: #080710;
-    padding: 10px;
+    padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
@@ -126,6 +132,7 @@ button:hover{
     width: 100%;
     background-color: #ffffff;
     color:lemonchiffon;
+    padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
@@ -170,8 +177,6 @@ span{
         #f09819
     );
     
-
-
 }
 img{
   width: 50px;
@@ -184,7 +189,77 @@ div.go,div.fb{
         #23a2f6
     );
 }
+      
 
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media (min-height:720px){
+form{
+width: 38vh;
+height: 60vh;
+top: 790px;
+
+}
+label{
+  font-size: 60px;
+}
+input{
+  padding: 50px;
+  
+}
+::placeholder{
+  font-size: 40px;
+}
+form h3{
+  font-size: 70px;
+  line-height: 1.8em;
+}
+img{
+  width: 120px;
+
+}
+div.go{
+  background: linear-gradient(
+    #f58872,
+        #23a2f6
+    );
+    font-size: 40px;
+    width: 590px;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+form h4{
+  font-size: 40px;
+  float: right;
+
+  
+  
+}
+button{
+font-size: 60px;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: 500px;
+    top: -800px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: 520px;
+    bottom: -200px;
+}
+span{
+  padding-left: 90px;
+  padding-right: 90px;
+}
+}
+    
 
 
 
@@ -201,8 +276,8 @@ div.go,div.fb{
         <img src="./Img/logo.jpg" alt="">
       </div>
 
-      <h3>Jamilo school<br>
-        <span>I.C.T</span> <h3>Intergration System</h2><br>
+      <h3>Jamilo school
+        <span>I.C.T</span><h3>Intergration System</h2>
         <h4>Login Here</h4>
 
         <label for="username">Username</label>
@@ -215,9 +290,12 @@ div.go,div.fb{
 
         <button>Log In</button>
         <div class="social">
-          <div class="go"><i class="fab fa-telegram"></i>  I.C.T</div>
-          <div class="fb"><i class="fab fa-youtube"></i>  Department</div>
+          <a href="mailto:georfreyonyango167@gmail.com" style="text-decoration: none
+          ;"><div class="go"><i class="fab fa-telegram"></i> 
+             Reset password</div></a>
+        
         </div>
+      
     </form>
     <script>
       window.addEventListener('load', function() {
